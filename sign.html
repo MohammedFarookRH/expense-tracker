@@ -1,0 +1,132 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNUP</title>
+	<link rel="stylesheet" type="text/css" href="stylesign.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head> -->
+<!-- <body>
+	<div class="wrapper">
+		<h1>SIGN UP</h1>
+		<form accept="#">
+			<input type="text" placeholder="Username">
+			<input type="text" placeholder="Name">
+			<input type="Password" placeholder="Password">
+			<input type="Password" placeholder="Re-Enter password">
+		</form>
+		<div class="terms"> 
+			<input type="checkbox" id="checkbox">
+			<label for="checkbox">I agree to these <a href="#">Terms & Conditions</a></label>
+
+
+		</div>
+
+			<button >Sign</button>
+			<div class="member">
+				 Already a Member ?<a href="./login.html">Login here</a>
+				 
+
+			</div>
+
+		
+	</div>
+
+
+</body>
+</html>
+ -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIGNUP</title>
+    <link rel="stylesheet" type="text/css" href="stylesign.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>SIGN UP</h1>
+        <form onsubmit="signup()">
+            <input type="text" id="usernameInput" placeholder="Username" required>
+            <input type="text" id="nameInput" placeholder="Name" required>
+            <input type="password" id="passwordInput" placeholder="Password" required>
+            <input type="password" id="confirmPasswordInput" placeholder="Re-Enter password" required>
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="checkbox" required>
+            <label for="checkbox">I agree to these <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button type="button" onclick="signup()">Sign</button>
+        <div class="member">
+            Already a Member ?<a href="./login.html">Login here</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function signup() {
+            var username = document.getElementById("usernameInput").value;
+            var name = document.getElementById("nameInput").value;
+            var password = document.getElementById("passwordInput").value;
+            var confirmPassword = document.getElementById("confirmPasswordInput").value;
+
+            // Check if password matches confirmPassword
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+
+            // Save user data to localStorage
+            localStorage.setItem("username", username);
+            localStorage.setItem("name", name);
+            localStorage.setItem("password", password);
+
+            alert("Signup successful!");
+        }
+    </script>
+
+
+    <!-- <div class="wrapper">
+        <h1>SIGN UP</h1>
+        <form onsubmit="signup()">
+            <input type="text" id="usernameInput" placeholder="Username" required>
+            <input type="text" id="nameInput" placeholder="Name" required>
+            <input type="password" id="passwordInput" placeholder="Password" required>
+            <input type="password" id="confirmPasswordInput" placeholder="Re-Enter password" required>
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="checkbox" required>
+            <label for="checkbox">I agree to these <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button type="button" onclick="signup()">Sign</button>
+        <div class="member">
+            Already a Member ?<a href="./login.html">Login here</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function signup() {
+            var username = document.getElementById("usernameInput").value;
+            var name = document.getElementById("nameInput").value;
+            var password = document.getElementById("passwordInput").value;
+            var confirmPassword = document.getElementById("confirmPasswordInput").value;
+
+            // Check if password matches confirmPassword
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return;
+            }
+
+            // Save user data to localStorage
+            localStorage.setItem("username", username);
+            localStorage.setItem("name", name);
+            localStorage.setItem("password", password);
+
+            alert("Signup successful!");
+        }
+    </script>
+</body>
+</html>
+ -->

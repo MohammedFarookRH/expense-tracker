@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNUP</title>
+	<link rel="stylesheet" type="text/css" href="stylesign.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<style type="text/css">/*@import url('https://fonts.googleapis.com/css2? family=Poppins:wght@400;600&display=swap');*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins",sans-serif;
+	
+	
+
+} 
+body 
+{ /*/*background-color: #dfe9f5;*/ 
+	background-image:url("./background/page2.jpg" );
+	background-size: 100% 153.5%  ;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	overflow-y: hidden;
+
+	
+
+}
+.wrapper
+{
+	width: 330px;
+	padding: 2rem 1rem;
+	margin: 50px auto;
+	position: relative;
+	left:370px;
+	top:100px;
+	/*background-color: #fff;*/
+	border-radius:10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    /*background-image:url("./background/bg.jpg" );
+	background-size: 100% 100%  ;
+	background-repeat: no-repeat;*/
+	
+	/*color:#fff;*/
+
+
+
+
+}
+a{
+	text-decoration: none;
+	color: #1b1bc4;
+}
+a:hover{
+	color: #54e8e8;
+}
+h1{
+	font-size: 2rem;
+	/* color: #07001f;*/
+	 margin-bottom: 1.2rem;
+	 color:#fff;
+
+}
+form input
+{
+width: 90%;
+outline: none;
+border:1px solid #fff;
+padding: 12px 20px;
+margin-bottom:10px;
+border-radius: 20px;
+background-color: #e4e4e4;
+
+
+}
+.terms
+{
+color:#fff;
+}
+.login
+{
+	color: #FFF;
+}
+button
+{
+	font-size: 1.2em;
+	margin-top: 1.8rem;
+	padding: 10px 0 ;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	width: 50%;
+	color: #fff;
+	cursor: pointer;
+background: rgb(17,107,143);
+
+
+}
+.member
+{
+	color:#fff;
+
+}
+
+</style>
+
+</head>
+<body>
+	<!--  <div class="wrapper">
+        <h1>LOGIN</h1>
+        <form onsubmit="login()">
+            <input type="text" id="usernameInput" placeholder="Username">
+            <input type="password" id="passwordInput" placeholder="Password">
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree to these <a href="#">Terms & Conditions</a></label>
+            <div class="member">Want to <a href="./Sign.html">Sign UP</a></div>
+        </div>
+        <button type="button" onclick="login()">Login</button>
+    </div>
+
+	 <script type="text/javascript">
+        function login() {
+            var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+
+            // Check if the username and password are stored in localStorage
+            var storedUsername = localStorage.getItem("username");
+            var storedPassword = localStorage.getItem("password");
+
+            if (username === storedUsername && password === storedPassword) {
+                // Redirect or perform actions for successful login
+                alert("Login successful!");
+                // window.location.href = "./index.html";
+            } else {
+                alert("Login failed. Invalid username or password.");
+            }
+        }
+
+        // Example of storing data in localStorage (You would typically do this during signup)
+        // Uncomment and adjust as needed
+        /*
+        localStorage.setItem("username", "exampleUser");
+        localStorage.setItem("password", "examplePassword");
+        */
+    </script>
+ -->
+
+ <div class="wrapper">
+        <h1>LOGIN</h1>
+        <form onsubmit="login()">
+            <input type="text" id="usernameInput" placeholder="Username" required>
+            <input type="password" id="passwordInput" placeholder="Password" required>
+        </form>
+        <button type="button" onclick="login()">Login</button>
+        <div class="member">
+            Not a Member? <a href="./sign.html">Sign Up here</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function login() {
+            var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+
+ 
+            var storedUsername = localStorage.getItem("username");
+            var storedPassword = localStorage.getItem("password");
+
+            if (username === storedUsername && password === storedPassword) {
+                alert("Login successful!");
+                
+                window.location.href = "./index.html";
+            } else {
+                alert("Login failed. Invalid username or password.");
+            }
+        }
+    </script>
+
+</body>
+</html>

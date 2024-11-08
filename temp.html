@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*body
+		{    height: 100vh;
+			background-image:url("./background/bg3.jpg");
+			background-size: 100% 1000% ;
+			background-repeat: no-repeat;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			
+		}*/
+		.expense
+		{
+			color: wheat;
+			font-size: 3rem;
+			text-align: center;
+			/*background-color: #fff;*/
+		
+			position: relative;
+			left:370px; 
+			top:200px;
+
+
+
+		}
+		/*button
+		{
+			
+			font-size: 2.5rem;
+			text-align: center;
+			position: relative;
+			line-height: -2px;
+			left:-30px; 
+			top:370px;
+			border-radius:5px;
+			outline: none;
+
+
+			
+		}*/
+		body
+		{
+			padding:0;
+			margin:0;
+			/*background:linear-gradient(to right,#C6FFDD,#FBD786,#f7797d);*/
+			font-family: sans-serif;
+			overflow: hidden;
+			height: 100vh;
+			background-image:url("./background/tem5.svg");
+			background-size: 100% 100% ;
+			background-repeat: no-repeat;
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+		.exp{
+			width: 60%;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			color: #34ffea;
+			overflow: hidden;
+			padding:30px 70px;
+			font-size: 50px;
+			text-decoration:none;
+			letter-spacing: 2px;
+			/*text-transform: uppercase;*/
+			font-weight: bold;
+			box-shadow: 0 20px 50px rgb(255 255 255 / 5%);
+			text-align: center;
+			/*user-select: none;*/
+			/*background: #001632;*/
+			background: linear-gradient(130deg,#141E30,#021B79);
+			outline:none;
+
+
+
+		}
+		a:before
+		{
+			position: absolute;
+			width: 50%;
+			top:2px;
+			left: 2px;
+			bottom: 2px;
+			content: '';
+			background: rgb(142 255 240 / 10%)
+
+		}
+		a span:nth-child(1)
+		{
+			position: absolute;
+			width: 100%;
+			height: 5px;
+			top:0;
+			left:0;
+			background: linear-gradient(to right,#002b9d,#34ffea);
+			/*animation: animate1 2s linear infinite;*/
+		}
+		@keyframes animate1 {
+			0%{
+				transform:translateX(-100%);
+			}
+			100%
+			{
+				transform: translateX(100%);
+			}
+		}
+		a span:nth-child(2)
+
+		{	
+			position: absolute;
+			width: 5px;
+			height: 100px;
+			top:0;
+			right:0;
+			background: linear-gradient(to bottom,#002b9d,#34ffea);
+			/*animation: animate2 2s linear infinite;*/
+   			animation-delay: 1s;
+
+		}
+			@keyframes animate2 {
+			0%{
+				transform:translateY(-100%);
+			}
+			100%
+			{
+				transform: translateY(100%);
+			}
+		}
+
+
+a span:nth-child(3)
+
+		{	
+			position: absolute;
+			width: 100%;
+			height: 5px;
+			bottom:0;
+			left:0;
+			background: linear-gradient(to left,#002b9d,#34ffea);
+			/*animation: animate3 2s linear infinite;*/
+   			
+
+		}
+			@keyframes animate3 {
+			0%{
+				transform:translateX(100%);
+			}
+			100%
+			{
+				transform: translateX(-100%);
+			}
+		}
+		a span:nth-child(4)
+
+		{	
+			position: absolute;
+			width: 5px;
+			height: 100px;
+			top:0;
+			left:0;
+			background: linear-gradient(to top,#002b9d,#34ffea);
+			/*animation: animate4 2s linear infinite;*/
+   			animation-delay: 1s;
+
+		}
+			@keyframes animate4 {
+			0%{
+				transform:translateY(100%);
+			}
+			100%
+			{
+				transform: translateY(-100%);
+			}
+		}
+		.su{
+			/*position: relative;
+			top: 500px;
+			width: 30%;*/
+			background: #001632;
+			/*background: linear-gradient(130deg,#283c86,#45a247);*/
+			position: absolute;
+			top: 60%;
+			left: 30%;
+			transform: translate(-50%,-50%);
+			color: #34ffea;
+			overflow: hidden;
+			padding:20px 30px;
+			font-size: 20px;
+			text-decoration:none;
+			letter-spacing: 2px;
+			/*text-transform: uppercase;*/
+			font-weight: bold;
+			box-shadow: 0 20px 50px rgb(255 255 255 / 5%);
+			text-align: center;
+			/*user-select: none;*/
+
+		}
+		.lo{
+			/*position: relative;
+			margin: 10px;
+			top: 400px;
+			left: 600px;*/
+			background: #001632;
+			position: absolute;
+			top: 60%;
+			left: 65%;
+			transform: translate(-50%,-50%);
+			color: #34ffea;
+			overflow: hidden;
+			padding:20px 30px;
+			font-size: 20px;
+			text-decoration:none;
+			letter-spacing: 2px;
+			/*text-transform: uppercase;*/
+			font-weight: bold;
+			box-shadow: 0 20px 50px rgb(255 255 255 / 5%);
+			text-align: center;
+			/*user-select: none;*/
+		}
+		a
+		{
+			color:#34ffea;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- <label class="expense">EXPENSE TRACKER</label> -->
+	<!-- <button type="submit"><a href="./sign.html">Signup</a></button>
+	<button><a href="./login.html">Login</a></button> -->
+	<div class="exp"><a href="#">
+ 	<span></span>
+ 	<span></span>
+ 	<span></span>
+ 	<span></span>EXPENSE TRACKER
+		
+	</a>
+</div>
+<div class="su">
+	<a href="./sign.html">
+ 	<span></span>
+ 	<span></span>
+ 	<span></span>
+ 	<span></span>SIGN UP
+		
+	</a>
+	</div>
+	<div class="lo">
+
+	<a href="./login.html">
+ 	<span></span>
+ 	<span></span>
+ 	<span></span>
+ 	<span></span>LOGIN
+		
+	</a>
+</div>
+
+
+</body>
+</html>

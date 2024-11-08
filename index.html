@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="ledger">
+			<h2>Income Expense Tracker</h2>
+			<h4>Your Balance</h4>
+			<h1 id="balance">₹ 0.00</h1>
+			<div class="inc-exp-container">
+				<div class="inc" >
+					<h4>Income</h4>
+					<p id="inc-amt" class="amt plus">₹ 0.00</p>
+				</div>
+				<div class="exp">
+					<h4>Expense</h4>
+					<p id="exp-amt" class="amt minus">₹ 0.00</p>
+				</div>
+			</div>
+			<form action="#" id="form">
+
+				<div class="form-control">
+					<label for="desc">Description</label>
+					<input type="text" name="desc" id="desc" placeholder="Enter Description">
+				</div>
+
+				<div class="form-control">
+					<label for="amount">Amount</label>
+					<input type="number" name="amount" id="amount" placeholder="Amount">
+				</div>
+
+				<button class="btn" type="submit">Add Transaction</button>
+			</form>
+		</div>
+		<div class="transaction">
+			<h3>Transaction Details</h3>
+			<ul class="trans" id="trans">
+				<!-- <li class="exp">Insurance<span>-1500</span>
+				<button class="btn-del">x</button>
+				</li>
+				<li class="inc">Salary<span>35000</span>
+				<button class="btn-del">x</button>
+				</li>
+				<li class="exp">Food<span>-350</span>
+				<button class="btn-del">x</button>
+				</li>  -->
+				
+			</ul>
+		</div>
+	</div>
+	<div>
+		<button class="home"><a href="./front.html">HOME</a></button>
+	</div>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
